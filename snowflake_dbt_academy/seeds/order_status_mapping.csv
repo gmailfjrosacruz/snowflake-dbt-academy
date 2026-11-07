@@ -1,0 +1,8 @@
+order_status_raw,order_status_code 
+completed,completed
+shipped,in_transit
+pending,open
+processing,open
+cancelled,cancelled
+canceled,cancelled
+refunded,cancelled

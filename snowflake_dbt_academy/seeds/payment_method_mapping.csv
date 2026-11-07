@@ -1,0 +1,12 @@
+payment_method_raw,payment_method_code
+credit_card,CREDIT_CARD
+cc,CREDIT_CARD
+visa,CREDIT_CARD
+mastercard,CREDIT_CARD
+amex,CREDIT_CARD
+bank_transfer,BANK_TRANSFER
+wire,BANK_TRANSFER
+ach,BANK_TRANSFER
+paypal,DIGITAL_WALLET
+venmo,DIGITAL_WALLET
+gift_card,GIFT_CARD
