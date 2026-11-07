@@ -12,7 +12,7 @@ WITH
             li.quantity::numeric(10,2) * li.unit_price::numeric(10,2) AS line_total,
             li.discount_pct::numeric(10,2) AS discount_pct,
             li.quantity::numeric(10,2) * li.unit_price::numeric(10,2) * (1 - COALESCE(li.discount_pct::numeric(10,2), 0) / 100) AS line_total_after_discount
-        FROM raw.public.line_items li
+        FROM source_data li
     )
 
 SELECT 
