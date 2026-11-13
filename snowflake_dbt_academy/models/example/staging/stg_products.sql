@@ -9,9 +9,9 @@ WITH
     ),
     cleaned_data AS (
         SELECT
-            pr.product_name,
-            pr.category AS product_category,
-            pr.subcategory AS product_subcategory,
+            TRIM(UPPER(pr.product_name)) AS product_name,
+            TRIM(UPPER(pr.category)) AS category,
+            TRIM(UPPER(pr.subcategory)) AS subcategory,
             COALESCE(pdm.product_department_code, 'Other') AS product_department
         FROM source_data pr
         LEFT JOIN product_department_map pdm
